@@ -94,7 +94,7 @@ section {
     color: #1084BC !important;
 }
 .mob-top-nav-btn {
-    display: none;
+    display: none !important;
     width: 40px;
     height: 40px;
     background: #1084BC !important;
@@ -1179,7 +1179,7 @@ section {
         display: none;
     }
     .mob-top-nav-btn {
-        display: flex;
+        display: flex !important;
     }
     .top-nav-controls {
         gap: 6px;
