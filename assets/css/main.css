@@ -505,8 +505,13 @@ section {
     font-weight: 600;
     font-size: 56px;
     line-height: 100%;
-    color: #1084BC;
+    color: #1084BC !important;
     margin-bottom: 48px;
+    text-decoration: none;      
+    -webkit-text-decoration-skip: none; 
+    -webkit-touch-callout: none; 
+}
+
 }
 .fast-btn {
     background: #1084BC !important;
