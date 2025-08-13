@@ -1,0 +1,1103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Наследие</title>
+    <link rel="preload" href="assets/fonts/Inter-VariableFont_opsz,wght.ttf" as="font" type="font/ttf" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+  </head>
+  <body>
+    <style>
+      @media (max-width: 991px) {
+        .banner-text {
+          background: url('assets/img/banner.jpg');
+        }
+      }
+    </style>
+    <header>
+        <div class="top-nav">
+          <div class="container">
+              <div class="top-nav-wrap">
+                <picture>
+                    <source srcset="assets/img/logo.svg" type="image/svg" />
+                    <img src="assets/img/logo.svg" class="top-logo" loading="lazy" />
+                </picture>
+                <div class="top-nav-controls">
+                  <button class="btn top-nav-num-btn"><span>+7 906 299-00-45</span></button>
+                  <button class="btn top-nav-btn"><span>Заказать звонок</span></button>
+                  <button class="btn mob-top-nav-btn" aria-label="Открыть меню">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="19" fill="none" viewBox="0 0 18 19">
+                      <path stroke="#fff" stroke-miterlimit="10" d="M16.477 14.248c0 .27-.06.547-.187.817-.127.27-.292.525-.51.765a3.381 3.381 0 0 1-1.23.885 3.76 3.76 0 0 1-1.463.285c-.764 0-1.582-.18-2.444-.547a13.173 13.173 0 0 1-2.58-1.486 21.563 21.563 0 0 1-2.46-2.1 21.31 21.31 0 0 1-2.093-2.452c-.615-.855-1.11-1.71-1.47-2.557-.36-.855-.54-1.673-.54-2.453 0-.51.09-.998.27-1.448a3.46 3.46 0 0 1 .862-1.252C3.112 2.232 3.638 2 4.192 2c.21 0 .42.045.608.135.195.09.368.225.503.42l1.74 2.453c.135.187.232.36.3.524.067.158.104.316.104.458 0 .18-.052.36-.157.532-.098.173-.24.353-.42.533l-.57.593a.401.401 0 0 0-.12.3c0 .06.008.112.022.172.023.06.045.105.06.15.136.248.368.57.698.96.338.39.697.787 1.087 1.185.405.398.795.765 1.193 1.103.39.33.713.554.967.69.038.014.083.037.135.06.06.022.12.03.188.03a.413.413 0 0 0 .308-.128l.57-.563c.187-.187.367-.33.54-.42a.999.999 0 0 1 .532-.157c.143 0 .293.03.457.098a2.9 2.9 0 0 1 .526.292l2.482 1.762c.195.136.33.293.413.48.075.188.12.375.12.585Z"/>
+                      <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" d="M13.875 7.25c0-.45-.352-1.14-.877-1.702-.48-.518-1.118-.923-1.748-.923M16.5 7.25A5.246 5.246 0 0 0 11.25 2"/>
+                    </svg>
+                  </button>
+                  <button class="btn mob-top-nav-btn main-nav-mob-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="19" fill="none" viewBox="0 0 18 19">
+                      <path stroke="#fff" stroke-linecap="round" d="M2.25 5.75h13.5M2.25 9.5h13.5m-13.5 3.75h13.5"/>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="main-nav">
+          <div class="container">
+            <div class="main-nav-wrap">
+              <nav class="main-nav-list">
+                <ul class="nav-items">
+
+                  <li class="nav-item">
+                    <a href="#">Нужна помощь</a>
+                  </li>
+
+                  <li class="nav-item has-dropdown">
+                    <a href="#">Лечение наркозависимости</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="7" fill="none" viewBox="0 0 12 7">
+                      <path stroke="#0B161C" d="m11.2.5-5 5-5-5"/>
+                    </svg>
+                    <ul class="dropdown">
+                      <li class="has-submenu">
+                        <a href="#">
+                          <span>Детоксикация наркозависимых</span>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="7" height="12" fill="none" viewBox="0 0 7 12">
+                            <path stroke="#000" d="m.5 1 5 5-5 5"/>
+                          </svg>
+                        </a>
+                        <ul class="submenu">
+                          <li><a href="#">Детоксикация на дому</a></li>
+                          <li><a href="#">Детоксикация от марихуаны</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="#"><span>Нарколог на дом</span></a></li>
+                      <li><a href="#"><span>Лечение наркомании на дому</span></a></li>
+                      <li><a href="#"><span>Реабилитация наркозависимых 12 шагов</span></a></li>
+                      <li><a href="#"><span>Психолог для наркозависимых</span></a></li>
+                      <li><a href="#"><span>Принудительное лечение наркомании</span></a></li>
+                      <li><a href="#"><span>Лечение солевых наркоманов</span></a></li>
+                      <li><a href="#"><span>Лечение зависимости от спайса </span></a></li>
+                      <li><a href="#"><span>Кодирование наркозависимых </span></a></li>
+                      <li><a href="#"><span>Лечение зависимости от героина </span></a></li>
+                      <li><a href="#"><span>Принудительное лечение наркомании</span></a></li>
+                    </ul>
+                  </li>
+
+                  <li class="nav-item has-dropdown">
+                    <a href="#">Лечение алкоголизма</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="7" fill="none" viewBox="0 0 12 7">
+                      <path stroke="#0B161C" d="m11.2.5-5 5-5-5"/>
+                    </svg>
+                    <ul class="dropdown">
+                      <li><a href="#"><span>Пункт</span></a></li>
+                      <li><a href="#"><span>Пункт</span></a></li>
+                    </ul>
+                  </li>
+
+                  <li class="nav-item"><a href="#">Отзывы</a></li>
+
+                  <li class="nav-item"><a href="#">Контакты</a></li>
+
+                  <li class="nav-item has-dropdown">
+                    <a href="#">О центре</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="7" fill="none" viewBox="0 0 12 7">
+                      <path stroke="#0B161C" d="m11.2.5-5 5-5-5"/>
+                    </svg>
+                    <ul class="dropdown">
+                      <li><a href="#"><span>Пункт</span></a></li>
+                      <li><a href="#"><span>Пункт</span></a></li>
+                    </ul>
+                  </li>
+
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <div class="main-nav-mob">
+          <div class="main-nav-mob__content">
+            <button class="main-nav-mob__close" aria-label="Закрыть меню">✕</button>
+
+            <ul class="main-nav-mob__list">
+              <li><a href="#">Нужна помощь</a></li>
+
+              <li class="has-dropdown">
+                <button class="main-nav-mob__dropdown-toggle">
+                  Лечение наркозависимости
+                  <span class="arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="10" fill="none" viewBox="0 0 12 10">
+                      <path stroke="#0B161C" d="m11.2 2.5-5 5-5-5"/>
+                    </svg>
+                  </span>
+                </button>
+                <ul class="main-nav-mob__dropdown">
+                  <li class="has-submenu">
+                    <button class="main-nav-mob__dropdown-toggle">
+                      Детоксикация наркозависимых
+                      <span class="arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="10" fill="none" viewBox="0 0 12 10">
+                          <path stroke="#0B161C" d="m11.2 2.5-5 5-5-5"/>
+                        </svg>
+                      </span>
+                    </button>
+                    <ul class="main-nav-mob__dropdown">
+                      <li><a href="#">Детоксикация на дому</a></li>
+                      <li><a href="#">Детоксикация от марихуаны</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Нарколог на дом</a></li>
+                  <li><a href="#">Лечение наркомании на дому</a></li>
+                </ul>
+              </li>
+
+              <li class="has-dropdown">
+                <button class="main-nav-mob__dropdown-toggle">
+                  Лечение алкоголизма
+                  <span class="arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="10" fill="none" viewBox="0 0 12 10">
+                      <path stroke="#0B161C" d="m11.2 2.5-5 5-5-5"/>
+                    </svg>
+                  </span>
+                </button>
+                <ul class="main-nav-mob__dropdown">
+                  <li><a href="#">Пункт</a></li>
+                  <li><a href="#">Пункт</a></li>
+                </ul>
+              </li>
+
+              <li><a href="#">Отзывы</a></li>
+              <li><a href="#">Контакты</a></li>
+
+              <li class="has-dropdown">
+                <button class="main-nav-mob__dropdown-toggle">
+                  О центре
+                  <span class="arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="10" fill="none" viewBox="0 0 12 10">
+                      <path stroke="#0B161C" d="m11.2 2.5-5 5-5-5"/>
+                    </svg>
+                  </span>
+                </button>
+                <ul class="main-nav-mob__dropdown">
+                  <li><a href="#">Пункт</a></li>
+                  <li><a href="#">Пункт</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </header>
+    <main>
+      <section class="banner-section" style="background: url('assets/img/banner.jpg');">
+        <div class="container in-container">
+          <div class="banner-content">
+            <div class="banner-text">
+              <div class="banner-text-wrap">
+                <h1 class="banner-title">Анонимная наркологическая клиника в Череповце</h1>
+                <p class="banner-subtitle">Комплексная программа восстановления: выведем из запоя, снимем абстинентный синдром, поможем вернутся к трезвой жизни.</p>
+                <button class="banner-btn">Бесплатная консультация</button>
+              </div>
+            </div>
+            <div class="banner-media">
+              <div class="banner-video">
+                <img class="banner-video-preview" src="assets/img/video-prev.jpg" alt="Preview">
+                <video class="banner-video-content" muted playsinline>
+                  <source src="assets/img/video.mp4" type="video/mp4">
+                </video>
+                <button class="btn banner-play-btn">
+                  <picture>
+                      <source srcset="assets/img/play-icon.svg" type="image/svg" />
+                      <img src="assets/img/play-icon.svg" loading="lazy" />
+                  </picture>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="info-section">
+        <div class="container">
+          <div class="info-items-wrap">
+
+            <div class="info-item">
+              <div class="info-item-logo">
+                <picture>
+                    <source srcset="assets/img/info-1.svg" type="image/svg" />
+                    <img src="assets/img/info-1.svg" loading="lazy" />
+                </picture>
+              </div>
+              <div class="info-item-title">Комплексный <br> подход</div>
+              <div class="info-item-desc text gray">Медицинская помощь <br> и программа реабилитации</div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-item-logo">
+                <picture>
+                    <source srcset="assets/img/info-2.svg" type="image/svg" />
+                    <img src="assets/img/info-2.svg" loading="lazy" />
+                </picture>
+              </div>
+              <div class="info-item-title">Комфортное <br> проживание</div>
+              <div class="info-item-desc text gray">Реабилитационный центр <br> c условиями для скорейшего <br> выздоровления</div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-item-logo">
+                <picture>
+                    <source srcset="assets/img/info-3.svg" type="image/svg" />
+                    <img src="assets/img/info-3.svg" loading="lazy" />
+                </picture>
+              </div>
+              <div class="info-item-title">Полностью <br> анонимно</div>
+              <div class="info-item-desc text gray">Не раскрываем личные данные <br> и не передаём третим лицам</div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-item-logo">
+                <picture>
+                    <source srcset="assets/img/info-4.svg" type="image/svg" />
+                    <img src="assets/img/info-4.svg" loading="lazy" />
+                </picture>
+              </div>
+              <div class="info-item-title">Поддержка <br> семьи</div>
+              <div class="info-item-desc text gray">Работа с родственниками <br> для создания поддерживающей <br> среды после лечения</div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+      <section class="price-section">
+        <div class="container">
+          <div class="price-box">
+            <div class="price-main-item-wrap">
+              <div class="price-image" style="background: url(assets/img/price-list-1.jpg)"></div>
+              <div class="price-list-wrap">
+                  <div class="price-list-head">
+                    <h2 class="price-list-head-title">Лечение <br> алкоголизма</h2>
+                    <div class="price-list-head-bar">от 4 000 ₽</div>
+                  </div>
+                  <div class="price-list-items">
+                    <div class="price-list-item">
+                      <span class="price-list-item-text text gray">Психологическая помощь алкоголикам</span>
+                    </div>
+                    <div class="price-list-item">
+                      <span class="price-list-item-text text gray">Кодировка от алкоголя</span>
+                      <span class="price-list-item-amount text gray">от 4 000 ₽</span>
+                    </div>
+                    <div class="price-list-item">
+                      <span class="price-list-item-text text gray">Экстренное быстрое вытрезвление</span>
+                      <span class="price-list-item-amount text gray">6 900 ₽</span>
+                    </div>
+                    <div class="price-list-item">
+                      <span class="price-list-item-text text gray">Нарколог на дом</span>
+                      <span class="price-list-item-amount text gray">4 500 ₽</span>
+                    </div>
+                    <div class="price-list-item">
+                      <span class="price-list-item-text text gray">Капельца от алкоголизма</span>
+                      <span class="price-list-item-amount text gray">4 000 ₽</span>
+                    </div>
+                    <div class="price-list-item">
+                      <span class="price-list-item-text text gray">Лечение алкоголизма гипнозом</span>
+                      <span class="price-list-item-amount text gray">8 000 ₽</span>
+                    </div>
+                    <div class="price-list-item">
+                      <span class="price-list-item-text text gray">Детоксикация организма (алкоголь)</span>
+                      <span class="price-list-item-amount text gray">4 900 ₽</span>
+                    </div>
+                    <div class="price-list-item">
+                      <span class="price-list-item-text text gray">Реабилитация алкозависимых</span>
+                      <span class="price-list-item-amount text gray">от 2 000 ₽ / сутки</span>
+                    </div>
+                  </div>
+                  <button class="btn price-list-button">Записаться</button>
+              </div>
+            </div>
+             <div class="price-main-item-wrap">
+              <div class="price-list-wrap">
+                  <div class="price-list-head">
+                    <h2 class="price-list-head-title">Лечение <br> наркомании</h2>
+                    <div class="price-list-head-bar">от 3 000 ₽</div>
+                  </div>
+                  <div class="price-list-items">
+                    <div class="price-list-item">
+                      <span class="price-list-item-text text gray">Психологическая помощь наркозависимым</span>
+                    </div>
+                    <div class="price-list-item">
+                      <span class="price-list-item-text text gray">Нарколог на дом</span>
+                      <span class="price-list-item-amount text gray">4 500 ₽</span>
+                    </div>
+                    <div class="price-list-item">
+                      <span class="price-list-item-text text gray">Детоксикация организма от наркотиков</span>
+                      <span class="price-list-item-amount text gray">от 6 900 ₽</span>
+                    </div>
+                    <div class="price-list-item">
+                      <span class="price-list-item-text text gray">Лечение нарокмании гипнозом</span>
+                      <span class="price-list-item-amount text gray">8 000 ₽</span>
+                    </div>
+                    <div class="price-list-item">
+                      <span class="price-list-item-text text gray">Капельца</span>
+                      <span class="price-list-item-amount text gray">4 000 ₽</span>
+                    </div>
+                    <div class="price-list-item">
+                      <span class="price-list-item-text text gray">Реабилитация наркозависимых</span>
+                      <span class="price-list-item-amount text gray">от 2 000 ₽ / сутки</span>
+                    </div>
+                  </div>
+                  <button class="btn price-list-button">Записаться</button>
+              </div>
+              <div class="price-image" style="background: url(assets/img/price-list-2.jpg)"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="fast-section">
+        <div class="container">
+          <div class="fast-box">
+            <h2 class="fast-title">Нужна срочная помощь?</h2>
+            <div class="fast-desc">Врач выедет на дом, окажет медикаментозную помощь и проконсультирует</div>
+            <div class="fast-num">+7 906 299-00-45</div>
+            <button class="btn fast-btn">Нужна помощь</button>
+          </div>
+        </div>
+      </section>
+      <section class="count-section">
+        <div class="container">
+          <div class="count-wrap">
+            <div class="count-text">
+              <h2 class="count-title section-title">Поможем начать новую жизнь!</h2>
+              <div class="count-desc text gray">
+                Реабилитационный центр в Череповце предоставляет помощь людям, страдающим от алкогольной и наркотической зависимости, и помогает им вернуться к полноценной жизни
+                <br><br>
+                Наша цель — восстановление духовно-нравственных ценностей, гармонии с собой и окружающими, а также освобождение от зависимости. Мы уверены, что путь к новой жизни начинается с изменения мышления, характера и отношения к себе и миру
+              </div>
+            </div>
+            <div class="count-items">
+              <div class="count-item">
+                <div class="count-item-number"><span>5315</span></div>
+                <div class="count-item-text">Человек обратились <br> за помощью</div>
+              </div>
+              <div class="count-item">
+                <div class="count-item-number"><span>519</span></div>
+                <div class="count-item-text">Человек находятся в ремиссии от 3 месяцев до 19 лет</div>
+              </div>
+              <div class="count-item">
+                <div class="count-item-number"><span>1330</span></div>
+                <div class="count-item-text">Человек успешно прошли полный курс восстановления</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="cases">
+        <div class="container">
+          <div class="case photo-grid">
+            <img class="case" src="assets/img/case-1.jpg" alt="">
+            <img class="case" src="assets/img/case-3.jpg" alt="">
+            <img class="case" src="assets/img/case-4.jpg" alt="">
+            <img class="case" src="assets/img/case-5.jpg" alt="">
+            <img class="case tall" src="assets/img/case-2.jpg" alt="">
+          </div>
+        </div>
+      </section>
+      <section class="story-section">
+        <div class="container">
+          <h2 class="section-title real-title">Реальные истории выздоровления</h2>
+          <div class="story-slider-wrapper">
+            <div class="swiper-button-prev story-btn-prev">
+              <svg xmlns="http://www.w3.org/2000/svg" width="47" height="37" fill="none" viewBox="0 0 47 37">
+                <path stroke="#297194" stroke-width="3" d="M46.083 18.52H2.9m0 0L19.706 1.716M2.9 18.52l16.806 16.806"/>
+              </svg>
+            </div>
+            <div class="swiper story-swiper">
+              <div class="swiper-wrapper story-swiper-wrapper">
+                <div class="swiper-slide story-slide">
+                  <div class="story-slide-frame" style="background: url(assets/img/story-1.jpg);">
+                    <button class="btn story-play-btn">
+                      <picture>
+                          <source srcset="assets/img/story-play.svg" type="image/svg" />
+                          <img src="assets/img/story-play.svg" loading="lazy" />
+                      </picture>
+                    </button>
+                    <div class="story-frame-info">
+                      <span class="story-frame-source">YouTube</span>
+                      <span class="story-frame-info-devider"></span>
+                      <span class="story-frame-time">02:50</span>
+                    </div>
+                  </div>
+                  <div class="story-slide-text">
+                    <div class="story-slide-title gray">Андрей, история выздоровления</div>
+                    <div class="story-slide-desc text gray">В ремиссии 9 лет</div>
+                  </div>
+                </div>
+                <div class="swiper-slide story-slide">
+                  <div class="story-slide-frame" style="background: url(assets/img/story-2.jpg);">
+                    <button class="btn story-play-btn">
+                      <picture>
+                          <source srcset="assets/img/story-play.svg" type="image/svg" />
+                          <img src="assets/img/story-play.svg" loading="lazy" />
+                      </picture>
+                    </button>
+                    <div class="story-frame-info">
+                      <span class="story-frame-source">YouTube</span>
+                      <span class="story-frame-info-devider"></span>
+                      <span class="story-frame-time">12:06</span>
+                    </div>
+                  </div>
+                  <div class="story-slide-text">
+                    <div class="story-slide-title gray">Антон, история выздоровления</div>
+                    <div class="story-slide-desc text gray">В ремиссии 13 лет</div>
+                  </div>
+                </div>
+                <div class="swiper-slide story-slide">
+                  <div class="story-slide-frame" style="background: url(assets/img/story-3.jpg);">
+                    <button class="btn story-play-btn">
+                      <picture>
+                          <source srcset="assets/img/story-play.svg" type="image/svg" />
+                          <img src="assets/img/story-play.svg" loading="lazy" />
+                      </picture>
+                    </button>
+                    <div class="story-frame-info">
+                      <span class="story-frame-source">YouTube</span>
+                      <span class="story-frame-info-devider"></span>
+                      <span class="story-frame-time">02:50</span>
+                    </div>
+                  </div>
+                  <div class="story-slide-text">
+                    <div class="story-slide-title gray">Артём, история выздоровления</div>
+                    <div class="story-slide-desc text gray">В ремиссии 10 лет</div>
+                  </div>
+                </div>
+                <div class="swiper-slide story-slide">
+                  <div class="story-slide-frame" style="background: url(assets/img/story-1.jpg);">
+                    <button class="btn story-play-btn">
+                      <picture>
+                          <source srcset="assets/img/story-play.svg" type="image/svg" />
+                          <img src="assets/img/story-play.svg" loading="lazy" />
+                      </picture>
+                    </button>
+                    <div class="story-frame-info">
+                      <span class="story-frame-source">YouTube</span>
+                      <span class="story-frame-info-devider"></span>
+                      <span class="story-frame-time">02:50</span>
+                    </div>
+                  </div>
+                  <div class="story-slide-text">
+                    <div class="story-slide-title gray">Андрей, история выздоровления</div>
+                    <div class="story-slide-desc text gray">В ремиссии 9 лет</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next story-btn-next">
+             <svg xmlns="http://www.w3.org/2000/svg" width="46" height="36" fill="none" viewBox="0 0 46 36">
+              <path stroke="#297194" stroke-width="3" d="M.4 18.001h43.183m0 0L26.777 1.195m16.806 16.806L26.777 34.807"/>
+             </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="start-section">
+        <div class="container">
+          <h2 class="section-title">С чего начать?</h2>
+          <div class="start-section-descr real-title gray">Шаг за шагом к трезвой жизни!</div>
+          <div class="start-items">
+            <div class="start-item">
+              <div class="start-item-num">01</div>
+              <div class="start-item-content">
+                <div class="start-item-title gray">Первичная консультация</div>
+                <div class="start-item-desc text gray">
+                  Вы оставляете заявку на нашем сайтеили по телефону +7 911 150-30-18
+                  <br><br>
+                  Мы бесплатно проконсультируем вас по телефону или выедем на дом для срочной оценки состояния
+                </div>
+                <button class="btn start-item-button">
+                  Оставить заявку
+                </button>
+              </div>
+            </div>
+            <div class="start-item">
+              <div class="start-item-num">02</div>
+              <div class="start-item-content">
+                <div class="start-item-title gray">Медикаментозная помощь</div>
+                <div class="start-item-desc text gray">
+                  При необходимости врач снимает абстинентный синдром, выводит из запоя или оказывает другую медицинскую помощь
+                </div>
+              </div>
+            </div>
+             <div class="start-item">
+              <div class="start-item-num">03</div>
+              <div class="start-item-content">
+                <div class="start-item-title gray">Бесплатная реабилитация</div>
+                <div class="start-item-desc text gray">
+                  По желанию пациента, сотрудники фонда организуют трансфер в реабилитационный центр для прохождения бесплатного курса реабилитации, который длится 6 месяцев
+                </div>
+              </div>
+            </div>
+             <div class="start-item">
+              <div class="start-item-num">04</div>
+              <div class="start-item-content">
+                <div class="start-item-title gray">Второй этап реабилитации</div>
+                <div class="start-item-desc text gray">
+                  После прохождения первого курса реабилитации, пациенту предлагается пройти второй 6 месячный курс, который сфокусирован на социализации и возвращении к жизни в обществе
+                </div>
+              </div>
+            </div>
+             <div class="start-item">
+              <div class="start-item-num">05</div>
+              <div class="start-item-content">
+                <div class="start-item-title gray">Социальная адаптация</div>
+                <div class="start-item-desc text gray">
+                  После прохождения реабилитации, сотрудники фонда оказывают психологическую поддержку, помогают найти работу, обрести смысл жизни и новые цели
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="rehub-section">
+        <div class="container">
+          <h2 class="section-title">Реабилитация в стационаре</h2>
+          <div class="section-descr real-title">Стоимость от 2 000 ₽/сутки</div>
+          <div class="rehub-gallery">
+            <div class="rehub-gallery__item rehub-gallery__item--big-left">
+              <img src="assets/img/rehub-1.jpg" alt="">
+            </div>
+            <div class="rehub-gallery__item rehub-gallery__item--small-top">
+              <img src="assets/img/rehub-2.jpg" alt="">
+            </div>
+            <div class="rehub-gallery__item rehub-gallery__item--big-right">
+              <img src="assets/img/rehub-4.jpg" alt="">
+            </div>
+            <div class="rehub-gallery__item rehub-gallery__item--small-bottom">
+              <img src="assets/img/rehub-3.jpg" alt="">
+            </div>
+          </div>
+          <div class="rehub-items">
+            <div class="rehub-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
+                <path stroke="#1084BC" stroke-width="2" d="m2 8.24 5.132 5.453a2 2 0 0 0 2.913 0L18 5.24"/>
+              </svg>
+              <span class="gray">Комфортное проживание в номере</span>
+            </div>
+            <div class="rehub-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
+                <path stroke="#1084BC" stroke-width="2" d="m2 8.24 5.132 5.453a2 2 0 0 0 2.913 0L18 5.24"/>
+              </svg>
+              <span class="gray">Группа для созависимых</span>
+            </div>
+            <div class="rehub-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
+                <path stroke="#1084BC" stroke-width="2" d="m2 8.24 5.132 5.453a2 2 0 0 0 2.913 0L18 5.24"/>
+              </svg>
+              <span class="gray">Индивидуальная программа</span>
+            </div>
+            <div class="rehub-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
+                <path stroke="#1084BC" stroke-width="2" d="m2 8.24 5.132 5.453a2 2 0 0 0 2.913 0L18 5.24"/>
+              </svg>
+              <span class="gray">Отдельный санузел</span>
+            </div>
+            <div class="rehub-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
+                <path stroke="#1084BC" stroke-width="2" d="m2 8.24 5.132 5.453a2 2 0 0 0 2.913 0L18 5.24"/>
+              </svg>
+              <span class="gray">Спортивные мероприятия</span>
+            </div>
+            <div class="rehub-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
+                <path stroke="#1084BC" stroke-width="2" d="m2 8.24 5.132 5.453a2 2 0 0 0 2.913 0L18 5.24"/>
+              </svg>
+              <span class="gray">Психологическая помошь и индивидальное сопровождение психологом</span>
+            </div>
+            <div class="rehub-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
+                <path stroke="#1084BC" stroke-width="2" d="m2 8.24 5.132 5.453a2 2 0 0 0 2.913 0L18 5.24"/>
+              </svg>
+              <span class="gray">Занятия со специалистом по работе с хим. зависимостью</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="service-section">
+        <div class="container">
+          <h2 class="section-title real-title text-center">Стоимость на услуги наркологической клиники</h2>
+          <div class="service-item">
+            <div class="service-item-text text">Вывод из запоя</div>
+            <div class="service-item-text-mob">
+              <div class="service-item-text-mob-title text">Вывод из запоя</div>
+            </div>
+            <div class="service-item-info">
+              <div class="service-item-price text">4500 ₽</div>
+              <button class="btn service-item-button">Заказать услугу</button>
+            </div>
+          </div>
+          <div class="service-list-content">
+            <div class="service-tabs">
+              <div class="service-tab service-tab--active" data-service-tab="1"><div class="service-tab-title">Кодирование</div></div>
+              <div class="service-tab" data-service-tab="2"><div class="service-tab-title">Нарколог на дом</div></div>
+            </div>
+            <div class="service-contents">
+              <div class="service-content service-content--active" data-service-content="1">
+                <div class="service-content-items">
+
+                  <div class="service-item">
+                    <div class="service-item-text text">Укол на 6 месяцев — Дисульфирам</div>
+                    <div class="service-item-text-mob">
+                      <div class="service-item-text-mob-title text">Дисульфирам</div>
+                      <div class="service-item-text-mob-desc text">Укол на 6 месяцев</div>
+                    </div>
+                    <div class="service-item-info">
+                      <div class="service-item-price text">4000 ₽</div>
+                      <button class="btn service-item-button">Заказать услугу</button>
+                    </div>
+                  </div>
+                  <div class="service-item">
+                    <div class="service-item-text text">Укол на 6 месяцев — Эспераль</div>
+                    <div class="service-item-text-mob">
+                      <div class="service-item-text-mob-title text">Дисульфирам</div>
+                      <div class="service-item-text-mob-desc text">Укол на 6 месяцев</div>
+                    </div>
+                    <div class="service-item-info">
+                      <div class="service-item-price text">5500 ₽</div>
+                      <button class="btn service-item-button">Заказать услугу</button>
+                    </div>
+                  </div>
+                  <div class="service-item">
+                    <div class="service-item-text text">Укол на 6 месяцев — Эспераль - гель</div>
+                    <div class="service-item-text-mob">
+                      <div class="service-item-text-mob-title text">Дисульфирам</div>
+                      <div class="service-item-text-mob-desc text">Укол на 6 месяцев</div>
+                    </div>
+                    <div class="service-item-info">
+                      <div class="service-item-price text">6500 ₽</div>
+                      <button class="btn service-item-button">Заказать услугу</button>
+                    </div>
+                  </div>
+                  <div class="service-item">
+                    <div class="service-item-text text">Укол на 1 год — Дисульфирам</div>
+                    <div class="service-item-text-mob">
+                      <div class="service-item-text-mob-title text">Дисульфирам</div>
+                      <div class="service-item-text-mob-desc text">Укол на 6 месяцев</div>
+                    </div>
+                    <div class="service-item-info">
+                      <div class="service-item-price text">4500 ₽</div>
+                      <button class="btn service-item-button">Заказать услугу</button>
+                    </div>
+                  </div>
+                  <div class="service-item">
+                    <div class="service-item-text text">Укол на 1 год — Эспераль</div>
+                    <div class="service-item-text-mob">
+                      <div class="service-item-text-mob-title text">Дисульфирам</div>
+                      <div class="service-item-text-mob-desc text">Укол на 6 месяцев</div>
+                    </div>
+                    <div class="service-item-info">
+                      <div class="service-item-price text">6000 ₽</div>
+                      <button class="btn service-item-button">Заказать услугу</button>
+                    </div>
+                  </div>
+                  <div class="service-item">
+                    <div class="service-item-text text">Укол на 1 год — Эспераль-гель</div>
+                    <div class="service-item-text-mob">
+                      <div class="service-item-text-mob-title text">Дисульфирам</div>
+                      <div class="service-item-text-mob-desc text">Укол на 6 месяцев</div>
+                    </div>
+                    <div class="service-item-info">
+                      <div class="service-item-price text">7000 ₽</div>
+                      <button class="btn service-item-button">Заказать услугу</button>
+                    </div>
+                  </div>
+                  <div class="service-item">
+                    <div class="service-item-text text">Вшивание на 6 месяцев — Дисульфирам</div>
+                    <div class="service-item-text-mob">
+                      <div class="service-item-text-mob-title text">Дисульфирам</div>
+                      <div class="service-item-text-mob-desc text">Укол на 6 месяцев</div>
+                    </div>
+                    <div class="service-item-info">
+                      <div class="service-item-price text">5500 ₽</div>
+                      <button class="btn service-item-button">Заказать услугу</button>
+                    </div>
+                  </div>
+                  <div class="service-item">
+                    <div class="service-item-text text">Вшивание на 6 месяцев — Эспераль</div>
+                    <div class="service-item-text-mob">
+                      <div class="service-item-text-mob-title text">Дисульфирам</div>
+                      <div class="service-item-text-mob-desc text">Укол на 6 месяцев</div>
+                    </div>
+                    <div class="service-item-info">
+                      <div class="service-item-price text">6500 ₽</div>
+                      <button class="btn service-item-button">Заказать услугу</button>
+                    </div>
+                  </div>
+                  <div class="service-item">
+                    <div class="service-item-text text">Вшивание на 1 год — Эспераль</div>
+                    <div class="service-item-text-mob">
+                      <div class="service-item-text-mob-title text">Дисульфирам</div>
+                      <div class="service-item-text-mob-desc text">Укол на 6 месяцев</div>
+                    </div>
+                    <div class="service-item-info">
+                      <div class="service-item-price text">6000 ₽</div>
+                      <button class="btn service-item-button">Заказать услугу</button>
+                    </div>
+                  </div>
+                  <div class="service-item">
+                    <div class="service-item-text text">Вшиванеи на 1 год — Дисульфирам</div>
+                    <div class="service-item-text-mob">
+                      <div class="service-item-text-mob-title text">Дисульфирам</div>
+                      <div class="service-item-text-mob-desc text">Укол на 6 месяцев</div>
+                    </div>
+                    <div class="service-item-info">
+                      <div class="service-item-price text">8000 ₽</div>
+                      <button class="btn service-item-button">Заказать услугу</button>
+                    </div>
+                  </div>
+                  <div class="service-item">
+                    <div class="service-item-text text">Гипноз (Довженко) 1 ГОД</div>
+                    <div class="service-item-text-mob">
+                      <div class="service-item-text-mob-title text">Дисульфирам</div>
+                      <div class="service-item-text-mob-desc text">Укол на 6 месяцев</div>
+                    </div>
+                    <div class="service-item-info">
+                      <div class="service-item-price text">8000 ₽</div>
+                      <button class="btn service-item-button">Заказать услугу</button>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <div class="service-content" data-service-content="2">
+                <div class="service-content-items">
+
+                  <div class="service-item">
+                    <div class="service-item-text text">Первичная консультация по телефону</div>
+                    <div class="service-item-text-mob">
+                      <div class="service-item-text-mob-title text">Дисульфирам</div>
+                      <div class="service-item-text-mob-desc text">Укол на 6 месяцев</div>
+                    </div>
+                    <div class="service-item-info">
+                      <div class="service-item-price text">Бесплатно</div>
+                      <button class="btn service-item-button">Заказать услугу</button>
+                    </div>
+                  </div>
+                  <div class="service-item">
+                    <div class="service-item-text text">Выезд и консультация нарколога на дом</div>
+                    <div class="service-item-text-mob">
+                      <div class="service-item-text-mob-title text">Дисульфирам</div>
+                      <div class="service-item-text-mob-desc text">Укол на 6 месяцев</div>
+                    </div>
+                    <div class="service-item-info">
+                      <div class="service-item-price text">3900 ₽</div>
+                      <button class="btn service-item-button">Заказать услугу</button>
+                    </div>
+                  </div>
+                  <div class="service-item">
+                    <div class="service-item-text text">Выезд мотивационной команды</div>
+                    <div class="service-item-text-mob">
+                      <div class="service-item-text-mob-title text">Дисульфирам</div>
+                      <div class="service-item-text-mob-desc text">Укол на 6 месяцев</div>
+                    </div>
+                    <div class="service-item-info">
+                      <div class="service-item-price text">4900 ₽</div>
+                      <button class="btn service-item-button">Заказать услугу</button>
+                    </div>
+                  </div>
+                  <div class="service-item">
+                    <div class="service-item-text text">Снятие наркотической ломки</div>
+                    <div class="service-item-text-mob">
+                      <div class="service-item-text-mob-title text">Дисульфирам</div>
+                      <div class="service-item-text-mob-desc text">Укол на 6 месяцев</div>
+                    </div>
+                    <div class="service-item-info">
+                      <div class="service-item-price text">4900 ₽</div>
+                      <button class="btn service-item-button">Заказать услугу</button>
+                    </div>
+                  </div>
+                  <div class="service-item">
+                    <div class="service-item-text text">Вывод из запоя на дому</div>
+                    <div class="service-item-text-mob">
+                      <div class="service-item-text-mob-title text">Дисульфирам</div>
+                      <div class="service-item-text-mob-desc text">Укол на 6 месяцев</div>
+                    </div>
+                    <div class="service-item-info">
+                      <div class="service-item-price text">4900 ₽</div>
+                      <button class="btn service-item-button">Заказать услугу</button>
+                    </div>
+                  </div>
+                  <div class="service-item">
+                    <div class="service-item-text text">Повторный вывод из запоя на дому </div>
+                    <div class="service-item-text-mob">
+                      <div class="service-item-text-mob-title text">Дисульфирам</div>
+                      <div class="service-item-text-mob-desc text">Укол на 6 месяцев</div>
+                    </div>
+                    <div class="service-item-info">
+                      <div class="service-item-price text">4500 ₽</div>
+                      <button class="btn service-item-button">Заказать услугу</button>
+                    </div>
+                  </div>
+                  <div class="service-item">
+                    <div class="service-item-text text">Стационар на дому (сутки)</div>
+                    <div class="service-item-text-mob">
+                      <div class="service-item-text-mob-title text">Дисульфирам</div>
+                      <div class="service-item-text-mob-desc text">Укол на 6 месяцев</div>
+                    </div>
+                    <div class="service-item-info">
+                      <div class="service-item-price text">6900 ₽</div>
+                      <button class="btn service-item-button">Заказать услугу</button>
+                    </div>
+                  </div>
+                  <div class="service-item">
+                    <div class="service-item-text text">Капельница одинарная (днем / ночью)</div>
+                    <div class="service-item-text-mob">
+                      <div class="service-item-text-mob-title text">Дисульфирам</div>
+                      <div class="service-item-text-mob-desc text">Укол на 6 месяцев</div>
+                    </div>
+                    <div class="service-item-info">
+                      <div class="service-item-price text">4900 ₽</div>
+                      <button class="btn service-item-button">Заказать услугу</button>
+                    </div>
+                  </div>
+                  <div class="service-item">
+                    <div class="service-item-text text">Капельница двойная (днем / ночью)</div>
+                    <div class="service-item-text-mob">
+                      <div class="service-item-text-mob-title text">Дисульфирам</div>
+                      <div class="service-item-text-mob-desc text">Укол на 6 месяцев</div>
+                    </div>
+                    <div class="service-item-info">
+                      <div class="service-item-price text">6900 ₽</div>
+                      <button class="btn service-item-button">Заказать услугу</button>
+                    </div>
+                  </div>
+                  <div class="service-item">
+                    <div class="service-item-text text">Детоксикация стандартная</div>
+                    <div class="service-item-text-mob">
+                      <div class="service-item-text-mob-title text">Дисульфирам</div>
+                      <div class="service-item-text-mob-desc text">Укол на 6 месяцев</div>
+                    </div>
+                    <div class="service-item-info">
+                      <div class="service-item-price text">4900 ₽</div>
+                      <button class="btn service-item-button">Заказать услугу</button>
+                    </div>
+                  </div>
+                  <div class="service-item">
+                    <div class="service-item-text text">Экстренное быстрое вытрезвление</div>
+                    <div class="service-item-text-mob">
+                      <div class="service-item-text-mob-title text">Дисульфирам</div>
+                      <div class="service-item-text-mob-desc text">Укол на 6 месяцев</div>
+                    </div>
+                    <div class="service-item-info">
+                      <div class="service-item-price text">6900 ₽</div>
+                      <button class="btn service-item-button">Заказать услугу</button>
+                    </div>
+                  </div>
+                  <div class="service-item">
+                    <div class="service-item-text text">Детоксикация организма от алкоголя</div>
+                    <div class="service-item-text-mob">
+                      <div class="service-item-text-mob-title text">Дисульфирам</div>
+                      <div class="service-item-text-mob-desc text">Укол на 6 месяцев</div>
+                    </div>
+                    <div class="service-item-info">
+                      <div class="service-item-price text">4900 ₽</div>
+                      <button class="btn service-item-button">Заказать услугу</button>
+                    </div>
+                  </div>
+                  <div class="service-item">
+                    <div class="service-item-text text">Детоксикация организма от героина</div>
+                    <div class="service-item-text-mob">
+                      <div class="service-item-text-mob-title text">Дисульфирам</div>
+                      <div class="service-item-text-mob-desc text">Укол на 6 месяцев</div>
+                    </div>
+                    <div class="service-item-info">
+                      <div class="service-item-price text">6900 ₽</div>
+                      <button class="btn service-item-button">Заказать услугу</button>
+                    </div>
+                  </div>
+                  <div class="service-item">
+                    <div class="service-item-text text">Детоксикация организма от метадона</div>
+                    <div class="service-item-text-mob">
+                      <div class="service-item-text-mob-title text">Дисульфирам</div>
+                      <div class="service-item-text-mob-desc text">Укол на 6 месяцев</div>
+                    </div>
+                    <div class="service-item-info">
+                      <div class="service-item-price text">8900 ₽</div>
+                      <button class="btn service-item-button">Заказать услугу</button>
+                    </div>
+                  </div>
+                  <div class="service-item">
+                    <div class="service-item-text text">Детоксикация организма от амфетамина</div>
+                    <div class="service-item-text-mob">
+                      <div class="service-item-text-mob-title text">Дисульфирам</div>
+                      <div class="service-item-text-mob-desc text">Укол на 6 месяцев</div>
+                    </div>
+                    <div class="service-item-info">
+                      <div class="service-item-price text">6900 ₽</div>
+                      <button class="btn service-item-button">Заказать услугу</button>
+                    </div>
+                  </div>
+                  <div class="service-item">
+                    <div class="service-item-text text">Детоксикация организма от спайсов и солей</div>
+                    <div class="service-item-text-mob">
+                      <div class="service-item-text-mob-title text">Дисульфирам</div>
+                      <div class="service-item-text-mob-desc text">Укол на 6 месяцев</div>
+                    </div>
+                    <div class="service-item-info">
+                      <div class="service-item-price text">6900 ₽</div>
+                      <button class="btn service-item-button">Заказать услугу</button>
+                    </div>
+                  </div>
+                  <div class="service-item">
+                    <div class="service-item-text text">Сопровождение в стационар клиники </div>
+                    <div class="service-item-text-mob">
+                      <div class="service-item-text-mob-title text">Дисульфирам</div>
+                      <div class="service-item-text-mob-desc text">Укол на 6 месяцев</div>
+                    </div>
+                    <div class="service-item-info">
+                      <div class="service-item-price text">9900 ₽</div>
+                      <button class="btn service-item-button">Заказать услугу</button>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="service-addons-wrap">
+            <div class="service-addon">
+              <div class="service-addon-icon">
+                 <picture>
+                    <source srcset="assets/img/addon-1.svg" type="image/svg" />
+                    <img src="assets/img/addon-1.svg" loading="lazy" />
+                </picture>
+              </div>
+              <div class="service-addon-title">
+                Уютные <br> жилые комнаты
+              </div>
+            </div>
+            <div class="service-addon">
+              <div class="service-addon-icon">
+                 <picture>
+                    <source srcset="assets/img/addon-2.svg" type="image/svg" />
+                    <img src="assets/img/addon-2.svg" loading="lazy" />
+                </picture>
+              </div>
+              <div class="service-addon-title">
+                Просторные <br> гостиная и кухня
+              </div>
+            </div>
+            <div class="service-addon">
+              <div class="service-addon-icon">
+                 <picture>
+                    <source srcset="assets/img/addon-3.svg" type="image/svg" />
+                    <img src="assets/img/addon-3.svg" loading="lazy" />
+                </picture>
+              </div>
+              <div class="service-addon-title">
+                3х-разовое <br> питание
+              </div>
+            </div>
+            <div class="service-addon">
+              <div class="service-addon-icon">
+                 <picture>
+                    <source srcset="assets/img/addon-4.svg" type="image/svg" />
+                    <img src="assets/img/addon-4.svg" loading="lazy" />
+                </picture>
+              </div>
+              <div class="service-addon-title">
+                Русская баня
+              </div>
+            </div>
+            <div class="service-addon">
+              <div class="service-addon-icon">
+                 <picture>
+                    <source srcset="assets/img/addon-5.svg" type="image/svg" />
+                    <img src="assets/img/addon-5.svg" loading="lazy" />
+                </picture>
+              </div>
+              <div class="service-addon-title">
+                Продуманный <br> распорядок дня
+              </div>
+            </div>
+            <div class="service-addon">
+              <div class="service-addon-icon">
+                 <picture>
+                    <source srcset="assets/img/addon-6.svg" type="image/svg" />
+                    <img src="assets/img/addon-6.svg" loading="lazy" />
+                </picture>
+              </div>
+              <div class="service-addon-title">
+                Безопасная <br> и поддерживающая среда
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="team-section">
+        <div class="container">
+          <h2 class="team-section-title section-title text-center">Команда опытных специалистов — проводники к жизни без зависимостей</h2>
+          <div class="team-section-text-m text real-title text-center">В нашем центре работает команда профессионалов, готовая поддержать вас на каждом этапе. Мы объединяем опыт, знания и искреннее желание помочь каждому человеку найти свой путь к новой жизни</div>
+          <div class="team-items-wrap">
+            <div class="team-item">
+              <div class="team-item-img" style="background: url(assets/img/team-1.jpg);"></div>
+              <div class="team-item-title">
+                Унжаков Максим Леонидович
+              </div>
+              <div class="team-item-text text">
+                Директор фонда
+              </div>
+            </div>
+            <div class="team-item">
+              <div class="team-item-img" style="background: url(assets/img/team-2.jpg);"></div>
+              <div class="team-item-title">
+                Кузнецов Александр Сергеевич
+              </div>
+              <div class="team-item-text text">
+                Заместитель директора <br> по коммерческим вопросам
+              </div>
+            </div>
+            <div class="team-item">
+              <div class="team-item-img" style="background: url(assets/img/team-3.jpg);"></div>
+              <div class="team-item-title">
+                Заплохова Елена Сергеевна
+              </div>
+              <div class="team-item-text text">
+                Педагог-психолог <br> в социальной сфере
+              </div>
+            </div>
+            <div class="team-item">
+              <div class="team-item-img" style="background: url(assets/img/team-4.jpg);"></div>
+              <div class="team-item-title">
+                Голубев Николай Евгеньевич
+              </div>
+              <div class="team-item-text text">
+                Юрист
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="serts-section">
+        <div class="container">
+          <h2 class="section-title text-center real-title">Сертификаты</h2>
+          <div class="serts-wrap">
+            <div class="sert-item" style="background: url();"></div>
+            <div class="sert-item" style="background: url();"></div>
+            <div class="sert-item" style="background: url();"></div>
+            <div class="sert-item" style="background: url();"></div>
+          </div>
+        </div>
+      </section>
+      <section class="faq-section">
+        <div class="container">
+          <h2 class="section-title text-center real-title">Частые вопросы</h2>
+          <div class="faq-wrap">
+            
+          </div>
+        </div>
+      </section>
+    </main>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK" crossorigin="anonymous"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
