@@ -46,6 +46,10 @@ section {
 .real-title {
     margin-bottom: 64px;
 }
+.fancybox__container {
+  transition-duration: 0.7s !important;
+}
+
 
 /* Header styles */
 .top-nav {
