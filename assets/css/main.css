@@ -49,6 +49,17 @@ section {
 .fancybox__container {
   transition-duration: 0.7s !important;
 }
+.fancybox__iframe {
+  border: none !important; /* убираем рамку */
+}
+
+.fancybox__slide.has-iframe {
+  padding: 0 !important; /* убираем внутренние отступы вокруг видео */
+}
+
+.fancybox__content {
+  background: transparent !important; /* убираем фон */
+}
 
 
 /* Header styles */

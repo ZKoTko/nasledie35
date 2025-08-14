@@ -1,49 +1,4 @@
-// Видео в кружке на главной в баннере
 
-const bannerVideo = document.querySelector('.banner-video');
-const playBtn = bannerVideo.querySelector('.banner-play-btn');
-const preview = bannerVideo.querySelector('.banner-video-preview');
-const video = bannerVideo.querySelector('.banner-video-content');
-
-function showPreview() {
-  video.pause();
-  video.currentTime = 0;    
-  video.style.display = 'none';
-  preview.style.display = 'block';
-  playBtn.style.display = 'block';
-}
-
-function playVideo() {
-  preview.style.display = 'none';
-  video.style.display = 'block';
-  playBtn.style.display = 'none';
-
-  const p = video.play();
-  if (p && typeof p.then === 'function') {
-    p.catch(err => {
-      console.warn('video.play() blocked:', err);
-      showPreview();
-    });
-  }
-}
-
-playBtn.addEventListener('click', () => {
-  if (video.paused) {
-    playVideo();
-  } else {
-    showPreview();
-  }
-});
-
-video.addEventListener('click', () => {
-  if (!video.paused) {
-    showPreview();
-  } else {
-    playVideo();
-  }
-});
-
-video.addEventListener('ended', showPreview);
 
 
 
