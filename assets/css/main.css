@@ -1055,6 +1055,7 @@ section {
 
 .main-nav-mob__list > li {
   border-bottom: 1px solid #eee;
+  list-style: none !important;
 }
 
 .main-nav-mob__list a,
@@ -1074,31 +1075,27 @@ section {
 
 /* Дропдауны */
 .main-nav-mob__dropdown {
-  list-style: none;
-  padding-left: 15px;
-  max-height: 0;
+  height: 0;
   overflow: hidden;
-  transition: max-height 0.3s ease;
+  transition: height 0.3s ease;
 }
-
-.main-nav-mob__dropdown.open {
-  max-height: 500px; /* Достаточно для большинства списков */
+.main-nav-mob__dropdown li{
+    list-style: none;
 }
-
-.arrow {
+.menu-arrow {
   font-size: 12px;
   transition: transform 0.3s ease;
 }
 
-.main-nav-mob__dropdown-toggle.active .arrow {
+.main-nav-mob__dropdown-toggle.active .menu-arrow {
   transform: rotate(180deg);
 }
 
-.has-submenu .arrow {
+.has-submenu .menu-arrow {
   transform: rotate(0deg);
 }
 
-.has-submenu .main-nav-mob__dropdown-toggle.active .arrow {
+.has-submenu .main-nav-mob__dropdown-toggle.active .menu-arrow {
   transform: rotate(90deg);
 }
 
@@ -1215,6 +1212,7 @@ section {
     .banner-video {
         width: 100%;
         border-radius: 0;
+        display: none;
     }
     .info-items-wrap {
         flex-wrap: wrap;
@@ -1535,6 +1533,8 @@ section {
 
     .service-item {
         padding: 18px 20px;
+        min-height: 70px;
+        height: auto;
     }
     .service-item-text {
         display: none;
@@ -1543,6 +1543,7 @@ section {
         display: flex;
         flex-direction: column;
         gap: 2px;
+        max-width: 155px;
     }
     .service-item-text-mob-title {
         font-weight: 400;
