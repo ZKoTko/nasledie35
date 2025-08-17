@@ -1,8 +1,3 @@
-
-
-
-
-
 // Инициализация Swiper для слайдера историй
 function initSwiper() {
     if (window.innerWidth >= 768) {
@@ -37,18 +32,14 @@ window.addEventListener('resize', initSwiper);
 
 
 
-
-
 // Блок services на главной странице
 document.querySelectorAll('.service-tab').forEach(tab => {
   tab.addEventListener('click', () => {
     const target = tab.dataset.serviceTab;
 
-    // Убираем активный класс у всех табов и контента
     document.querySelectorAll('.service-tab').forEach(t => t.classList.remove('service-tab--active'));
     document.querySelectorAll('.service-content').forEach(c => c.classList.remove('service-content--active'));
 
-    // Добавляем активный класс выбранным
     tab.classList.add('service-tab--active');
     document.querySelector(`.service-content[data-service-content="${target}"]`)
       .classList.add('service-content--active');
@@ -84,7 +75,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  // Закрыть меню
   function closeMenu() {
     menu.classList.remove("active");
     document.body.style.overflow = "";
@@ -99,7 +89,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Открыть меню
   toggleBtn.addEventListener("click", () => {
     menu.classList.add("active");
     document.body.style.overflow = "hidden";
@@ -107,7 +96,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   closeBtn.addEventListener("click", closeMenu);
 
-  // Обработчики кликов по дропдаунам
   document.querySelectorAll(".main-nav-mob__dropdown-toggle").forEach((btn) => {
     btn.addEventListener("click", () => {
       const dropdown = btn.nextElementSibling;
@@ -117,6 +105,50 @@ document.addEventListener("DOMContentLoaded", () => {
       slideToggle(dropdown, isOpening);
     });
   });
+});
+
+
+
+
+
+//Аккордеон
+const accordionItemHeaders = document.querySelectorAll(".accordion-item-header");
+
+accordionItemHeaders.forEach(accordionItemHeader => {
+    accordionItemHeader.addEventListener("click", event => {
+             
+        const currentlyActiveAccordionItemHeader = document.querySelector(".accordion-item-header.active");
+        if(currentlyActiveAccordionItemHeader && currentlyActiveAccordionItemHeader!==accordionItemHeader) {
+          currentlyActiveAccordionItemHeader.classList.toggle("active");
+          currentlyActiveAccordionItemHeader.nextElementSibling.style.maxHeight = 0;
+        }
+
+        accordionItemHeader.classList.toggle("active");
+        const accordionItemBody = accordionItemHeader.nextElementSibling;
+        if(accordionItemHeader.classList.contains("active")) {
+        accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + "px";
+        }
+        else {
+        accordionItemBody.style.maxHeight = 0;
+        }
+        
+    });
+});
+
+
+// Кнопка goToTop
+document.querySelector('.footer-up-btn').addEventListener('click', function() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+});
+
+
+// Маска на телефон
+const phoneInput = document.getElementById('phone');
+  IMask(phoneInput, {
+    mask: '+{7} (000) 000-00-00'
 });
 
 
