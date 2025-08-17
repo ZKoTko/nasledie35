@@ -159,6 +159,13 @@ section {
     align-items: center;
     gap: 10px;
 }
+.nav-active > a{
+    font-weight: 600;
+    color: #1084BC !important;
+}
+.nav-active > svg path {
+    stroke: #1084BC;
+}
 .nav-item a:hover  {
     color: #1084BC;
 }
