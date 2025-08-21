@@ -14,6 +14,10 @@ function initSwiper() {
                     992: {
                         slidesPerView: 3,
                         spaceBetween: 20
+                    },
+                    768: {
+                        slidesPerView: 2,
+                        spaceBetween: 20
                     }
                 }
             });
@@ -46,6 +50,19 @@ document.querySelectorAll('.service-tab').forEach(tab => {
   });
 });
 
+// Страница отзывы
+document.querySelectorAll('.reviews-tab').forEach(tab => {
+  tab.addEventListener('click', () => {
+    const target = tab.dataset.reviewsTab;
+
+    document.querySelectorAll('.reviews-tab').forEach(t => t.classList.remove('reviews-tab--active'));
+    document.querySelectorAll('.reviews-content').forEach(c => c.classList.remove('reviews-content--active'));
+
+    tab.classList.add('reviews-tab--active');
+    document.querySelector(`.reviews-content[data-reviews-content="${target}"]`)
+      .classList.add('reviews-content--active');
+  });
+});
 
 
 
