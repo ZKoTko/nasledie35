@@ -2041,7 +2041,20 @@ footer {
     background: transparent !important;
     color: #1084BC !important;
 }
-
+.reviews-top-btn-mob {
+    display: none;
+    width: 100%;
+    height: 64px;
+    background: #1084BC !important;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 130%;
+    color: #DAF2FF !important;
+    margin-bottom: 32px;
+}
 
 
 
@@ -2682,12 +2695,13 @@ footer {
         font-size: 24px;
     }
     .reviews-page-content {
-        flex-direction: column;
-        gap: 64px;
+        flex-direction: column-reverse;
+        gap: 0px;
     }
     .reviews-page-form-wrap {
         max-width: none;
         width: 100%;
+        padding-top: 64px;
     }
     .reviews-video-wrapper {
         justify-content: center;
@@ -3304,6 +3318,7 @@ footer {
         min-width: unset;
         max-width: 100%;
         width: 100%;
+        text-align: center;
     }
     .single-specialist-content {
         font-size: 18px !important;
@@ -3347,5 +3362,11 @@ footer {
     .modal-body .contact-form input {
         font-size: 14px;
         padding: 0 16px;
+    }
+    .reviews-top-btn-mob {
+        display: flex;
+    }
+    .single-specialist-btn {
+        margin: 0 auto;
     }
 }

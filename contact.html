@@ -230,7 +230,21 @@
                             <span>Круглосуточно</span>
                         </div>
                     </div>
-                    <button class="btn contact-info-page-btn">Выбрать город</button>
+                    
+                    <div class="contact-page-citys-list">
+                      <div class="contact-page-info-title" style="margin-bottom: 24px;">Другие города</div>
+                      <ol>
+                        <li class="text" style="margin-bottom: 8px;"><a href="#" style="color:#0B161C;">Подольск</a></li>
+                        <li class="text" style="margin-bottom: 8px;"><a href="#" style="color:#0B161C;">Великий Новгород</a></li>
+                        <li class="text" style="margin-bottom: 8px;"><a href="#" style="color:#0B161C;">Ярославль</a></li>
+                        <li class="text" style="margin-bottom: 8px;"><a href="#" style="color:#0B161C;">Москва</a></li>
+                        <li class="text" style="margin-bottom: 8px;"><a href="#" style="color:#0B161C;">Нижний Новгород</a></li>
+                        <li class="text" style="margin-bottom: 8px;"><a href="#" style="color:#0B161C;">Владимир</a></li>
+                        <li class="text" style="margin-bottom: 8px;"><a href="#" style="color:#0B161C;">Рязань</a></li>
+                        <li class="text" style="margin-bottom: 8px;"><a href="#" style="color:#0B161C;">Санкт-Петербург</a></li>
+                        <li class="text" style="margin-bottom: 8px;"><a href="#" style="color:#0B161C;">Тверь</a></li>
+                      </ol>
+                    </div>
                 </div>
                 <div class="contact-page-map">
                     <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Af130fc5c95b0f2b8f793576afd7639352a126f66420f4c17dd7fb7c2ffeee62d&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
@@ -345,16 +359,7 @@
         animated: true,
         showClass: "fancybox-fadeIn",
         hideClass: "fancybox-fadeOut",
-        dragToClose: false, // отключаем смахивание вниз
-        common: {
-          Motion: {
-            duration: 700, // замедляем анимацию (в мс)
-            easing: "ease-in-out" // плавнее
-          }
-        },
-        Carousel: {
-          friction: 0.95 // меньше рывков при перелистывании
-        }
+        dragToClose: false,
       });
     </script>
     <script src="assets/js/swiper-bundle.min.js"></script>

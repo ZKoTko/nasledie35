@@ -218,7 +218,7 @@
                 </div>
             </div>
             <div class="reviews-page-content">
-                <div class="reviews-page-form-wrap">
+                <div class="reviews-page-form-wrap" id="reviews-page-form-wrap">
                     <form>
                         <input type="text" placeholder="Ваше имя">
                         <input type="text" placeholder="Курс лечения">
@@ -245,7 +245,6 @@
                     </form>
                 </div>
                 <div class="reviews-page-content-wrapper">
-
                     <div class="reviews-list-content">
                         <div class="reviews-tabs">
                             <div class="reviews-tab reviews-tab--active" data-reviews-tab="1">
@@ -255,7 +254,6 @@
                             <div class="reviews-tab-title">Видеоотзывы</div>
                             </div>
                         </div>
-
                         <div class="reviews-contents">
                             <div class="reviews-content reviews-content--active" data-reviews-content="1">
                                 <div class="reviews-text-wrapper">
@@ -886,8 +884,8 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
+                <a style="text-decoration: none;" href="#reviews-page-form-wrap"><button class="btn reviews-top-btn-mob">Оставить отзыв</button></a>
             </div>
         </div>
       </section>
@@ -998,16 +996,7 @@
         animated: true,
         showClass: "fancybox-fadeIn",
         hideClass: "fancybox-fadeOut",
-        dragToClose: false, // отключаем смахивание вниз
-        common: {
-          Motion: {
-            duration: 700, // замедляем анимацию (в мс)
-            easing: "ease-in-out" // плавнее
-          }
-        },
-        Carousel: {
-          friction: 0.95 // меньше рывков при перелистывании
-        }
+        dragToClose: false,
       });
     </script>
     <script src="assets/js/swiper-bundle.min.js"></script>
