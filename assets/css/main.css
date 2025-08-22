@@ -3369,4 +3369,16 @@ footer {
     .single-specialist-btn {
         margin: 0 auto;
     }
+    .contact-page-content .section-title {
+        text-align: center;
+    }
+    .contact-page-info-title {
+        text-align: center;
+    }
+    .contact-page-content-wrapper {
+        padding-top: 32px;
+    }
+    .contact-page-info {
+        gap: 32px;
+    }
 }
